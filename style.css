@@ -1,5 +1,5 @@
 :root {
-    --brand-dark: #ca6700; /* Color principal maestríanimal */
+    --brand-dark: #ca6700; /* Naranja maestríanimal */
     --brand-light: #fafafa; 
 }
 
@@ -9,11 +9,8 @@ body {
     color: var(--brand-dark); 
 }
 
-.hidden-phase { 
-    display: none !important; 
-}
+.hidden-phase { display: none !important; }
 
-/* Estilos minimalistas para radio buttons tipo pill */
 .radio-btn-group input[type="radio"]:checked + label {
     background-color: var(--brand-dark);
     color: white;
@@ -25,11 +22,8 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.radio-btn-group label:hover {
-    border-color: #a1a1aa; /* Zinc 400 */
-}
+.radio-btn-group label:hover { border-color: #a1a1aa; }
 
-/* Inputs minimalistas */
 .minimal-input {
     border: 1px solid #e4e4e7;
     border-radius: 1rem;
@@ -42,14 +36,11 @@ body {
 
 .minimal-input:focus {
     border-color: var(--brand-dark);
-    box-shadow: 0 0 0 2px rgba(24, 24, 27, 0.1);
+    box-shadow: 0 0 0 2px rgba(202, 103, 0, 0.1);
 }
 
-.progress-bar { 
-    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
-}
+.progress-bar { transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
 
-/* Optimizaciones estrictas para impresión (PDF) */
 @media print {
     body { background-color: white; font-size: 11pt; }
     .no-print { display: none !important; }
